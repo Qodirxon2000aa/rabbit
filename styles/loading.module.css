@@ -1,0 +1,95 @@
+.loaderContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  z-index: 1000;
+  font-family: sans-serif;
+}
+
+.animationContainer {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.spinner {
+  animation: rotateSpinner 1.5s linear infinite;
+}
+
+@keyframes rotateSpinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circlePath {
+  stroke-dasharray: 630;
+  stroke-dashoffset: 0;
+  stroke: #fcb316;
+  animation: dash 2s ease-in-out infinite;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 630;
+  }
+  50% {
+    stroke-dashoffset: 315;
+    transform: rotate(45deg);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    transform: rotate(360deg);
+  }
+}
+
+.wrgRabbit {
+  position: absolute;
+  top: 45px;
+  left: 45px;
+  animation: rabbitBounce 1.2s ease-in-out infinite;
+}
+
+@keyframes rabbitBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.loadingText {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #333;
+}
+
+.progressBarContainer {
+  margin-top: 10px;
+  width: 60%;
+  height: 6px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background-color: #fcb316;
+  transition: width 0.2s ease;
+}
