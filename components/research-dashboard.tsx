@@ -40,26 +40,26 @@ export default function ResearchDashboard() {
         <div className="flex space-x-2">
             <a
               href="#"
-              className="border border-white rounded flex items-center justify-center px-4 py-1 hover:bg-white white hover:text-[#5D4B8C] transition-colors"
+              className="border border-[#b7945c]  rounded flex items-center justify-center px-4 py-1 hover:bg-white white hover:text-[#5D4B8C] transition-colors"
             >
               <RiTwitterXFill />
             </a>
             <a
               href="#"
-              className="border border-white rounded px-4 py-1 flex items-center hover:bg-white hover:text-[#5D4B8C] transition-colors"
+              className="border border-[#b7945c] rounded px-4 py-1 flex items-center hover:bg-white hover:text-[#5D4B8C] transition-colors"
             >
               <Play
                className="w-4 h-4 mr-2" /> LIVE FEED
             </a>
             <a
               href="#"
-              className="border border-white rounded px-4 py-1 hover:bg-white hover:text-[#5D4B8C] transition-colors"
+              className="border border-[#b7945c] rounded px-4 py-1 hover:bg-white hover:text-[#5D4B8C] transition-colors"
             >
               EXPORT
             </a>
             <a
               href="#"
-              className="border border-white rounded px-4 py-1 hover:bg-white hover:text-[#5D4B8C] transition-colors"
+              className="border border-[#b7945c] rounded px-4 py-1 hover:bg-white hover:text-[#5D4B8C] transition-colors"
             >
               ALERTS
             </a>
@@ -72,19 +72,17 @@ export default function ResearchDashboard() {
         <div className="space-y-8">
           <div>
             <h3 className="text-xl mb-4 tracking-wider">OBSERVATION</h3>
-            <div className="flex justify-center">
-              <div className="relative w-128 h-64">
+            <div className="w-full">
               <video 
-                  autoPlay 
-                  loop 
-                  muted 
-                  playsInline
-                  className="w-full h-full object-cover rounded-lg"
-                >
-                  <source src="/rabbit.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                className="w-full aspect-video object-cover rounded-lg"
+              >
+                <source src="/rabbit.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
 
