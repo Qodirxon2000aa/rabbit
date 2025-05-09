@@ -40,26 +40,26 @@ export default function ResearchDashboard() {
         <div className="flex space-x-2">
             <a
               href="#"
-              className="border border-[#b7945c]  rounded flex items-center justify-center px-4 py-1 hover:bg-white white hover:text-[#5D4B8C] transition-colors"
+              className="border border-white rounded flex items-center justify-center px-4 py-1 hover:bg-white white hover:text-[#5D4B8C] transition-colors"
             >
               <RiTwitterXFill />
             </a>
             <a
               href="#"
-              className="border border-[#b7945c] rounded px-4 py-1 flex items-center hover:bg-white hover:text-[#5D4B8C] transition-colors"
+              className="border border-white rounded px-4 py-1 flex items-center hover:bg-white hover:text-[#5D4B8C] transition-colors"
             >
               <Play
                className="w-4 h-4 mr-2" /> LIVE FEED
             </a>
             <a
               href="#"
-              className="border border-[#b7945c] rounded px-4 py-1 hover:bg-white hover:text-[#5D4B8C] transition-colors"
+              className="border border-white rounded px-4 py-1 hover:bg-white hover:text-[#5D4B8C] transition-colors"
             >
               EXPORT
             </a>
             <a
               href="#"
-              className="border border-[#b7945c] rounded px-4 py-1 hover:bg-white hover:text-[#5D4B8C] transition-colors"
+              className="border border-white rounded px-4 py-1 hover:bg-white hover:text-[#5D4B8C] transition-colors"
             >
               ALERTS
             </a>
@@ -109,6 +109,7 @@ export default function ResearchDashboard() {
               optimalLabel="Optimal range"
             />
           </div>
+
 
           <div>
             <h3 className="text-xl mb-4 tracking-wider">HUMIDITY</h3>
